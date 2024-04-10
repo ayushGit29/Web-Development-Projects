@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message {
+    height: 6vh;
+    width: 100vw;
+    background-color: rgba(138, 115, 80, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.displayed_message {
+    position: absolute;
+}
+
+#delivery_message {
+    animation-name: displayed_item;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+    animation-direction: alternate;
+}
+
+#discount_message {
+    animation-name: displayed_item2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+}
+
+@keyframes displayed_item
+{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes displayed_item2
+{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
