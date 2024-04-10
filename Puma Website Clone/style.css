@@ -16,6 +16,8 @@
     align-items: center;
     font-family: Inter, Arial, Helvetica, sans-serif;
     position: relative;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .displayed_message {
@@ -56,4 +58,47 @@
     to {
         opacity: 0;
     }
+}
+
+nav {
+    background-color: black;
+    width: 100vw;
+    height: 11vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "1nav 2nav";
+    padding: 1%;
+}
+
+nav .nav_1 {
+    grid-area: 1nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+nav .nav_2 {
+    grid-area: 2nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 25%;
+}
+.nav_items {
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav .nav_2 button {
+    background-color: black;
+    border: 0.00005px solid gray;
+    color: white;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+    padding: 2%;
 }
