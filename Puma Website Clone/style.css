@@ -74,7 +74,7 @@ nav .nav_1 {
     grid-area: 1nav;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 } 
 
 nav .nav_2 {
@@ -101,4 +101,110 @@ nav .nav_2 button {
     justify-content: space-around;
     height: 70%;
     padding: 2%;
+}
+
+.video_section {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.video_section video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.video_section button {
+    background: transparent;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.75%;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    width: 10%;
+}
+
+.explore_sports {
+    background-color: white;
+    width: 100%;
+    height: 125vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.75fr 1.25fr;
+    grid-template-areas: "game game game" "sport1 sport2 sport3" ;
+}
+
+.see_the_game {
+    grid-area: game;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: rgb(24,24,24);
+    flex-direction: column;
+}
+
+.see_the_game_heading {
+    font-size: 2em;
+    margin: auto 0;
+}
+
+#see_the_game_heading2 {
+    font-size: 1.75em;
+}
+
+.see_the_game_para {
+    text-align: center;
+    width: 65vw;
+    line-height: 1.75em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#sports1 {
+    grid-area: sport1;
+}
+
+#sports2 {
+    grid-area: sport2;
+}
+
+#sports3 {
+    grid-area: sport3;
+}
+.sports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sports img {
+    width: 90%;
+}
+
+.sports h3 {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 24);
+    font-size: 1.25em;
+    margin: auto 0;
+}
+
+.sports button {
+    font-size: 1em;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    padding: 2%;
+    margin-bottom: auto;
+    width: 50%;
+    word-spacing: 2%;
+    font-weight: 600;
 }
