@@ -255,6 +255,7 @@ nav .nav_2 button {
 .exclusive_launch_description button{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 1em;
+    font-weight: bold;
     background-color: white;
     color: rgb(24, 24, 24);
     padding: 3%;
@@ -293,7 +294,7 @@ nav .nav_2 button {
     text-align: center;
     width: 65vw;
     line-height: 1.75em;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -318,4 +319,145 @@ nav .nav_2 button {
 
 .sports img {
     width: 90%;
+}
+
+footer {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(24, 24, 24);
+    margin-top: 2%;
+}
+
+footer .footer_part_1 {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "support faq about social_media" "support faq about explore";
+    color: white;
+}
+
+footer .footer_part_1 #support {
+    grid-area: support; 
+}
+
+footer .footer_part_1 #faq {
+    grid-area: faq; 
+}
+
+footer .footer_part_1 #about {
+    grid-area: about;
+}
+
+footer .footer_part_1 table {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    line-height: 1.75em;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+footer .footer_part_1 td {
+    font-weight: 350;
+}
+
+footer .footer_part_1 .social_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social_media h3 {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2%;
+    font-weight: bold;
+}
+
+footer .footer_part_1 .social_media .social_media_icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer_part_1 .social_media .social_media_icons img {
+    width: 12%;
+}
+
+footer .footer_part_1 .social_media #app_icons {
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+}
+
+footer .footer_part_1 .social_media #app_icons img {
+    width: 15%;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin-left: 4%; 
+}
+
+.footer_part_2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "cards flag copyright";
+}
+
+.card_icons img {
+    width: 9%;
+    margin-left: 2%;
+}
+
+.card_icons {
+    grid-area: cards;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5%;
+}
+
+.flags {
+    grid-area: flag;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    letter-spacing: 2%;
+    font-weight: bold;
+}
+
+.flags .country {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2.25%;
+}
+
+.copyright {
+    grid-area: copyright;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 3);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    letter-spacing: 2%;
+    margin-right: 7%;
 }
