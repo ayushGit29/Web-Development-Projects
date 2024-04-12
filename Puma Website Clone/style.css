@@ -131,6 +131,135 @@ nav .nav_2 button {
     width: 10%;
 }
 
+.cricket_season .puma_rcb_jersey {
+    grid-area: rcb_jersey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cricket_season .puma_dc_jersey {
+    grid-area: dc_jersey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cricket_season {
+    background-color: white;
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "heading heading" "rcb_jersey dc_jersey";
+}
+
+.cricket_season h2 {
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
+    color: rgb(24, 24, 24);
+}
+
+.cricket_season img {
+    width: 90%;
+}
+
+.cricket_season p {
+    margin-bottom: 1.5%;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 24);
+}
+
+.cricket_season h2 {
+    margin: 1%;
+}
+
+.pseudo_heading {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 24);
+    font-size: 1.25em;
+    margin: auto 0;
+}
+
+.shop_now_button {
+    font-size: 1em;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    padding: 2%;
+    margin-bottom: auto;
+    width: 50%;
+    word-spacing: 2%;
+    font-weight: 600;
+}
+
+.exclusive_launch {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.exclusive_launch img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+}
+
+.exclusive_launch_description {
+    width: 100%;
+    height: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin-left: 3%;
+}
+
+.exclusive_launch_description h2 {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.75em;
+    font-weight: 600;
+    margin: auto 0;
+}
+
+.exclusive_launch_description p {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    margin: auto 0;
+}
+
+.exclusive_launch_description .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.exclusive_launch_description .buttons #explore_collection_button {
+    margin-left: 3%;
+}
+
+.exclusive_launch_description button{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: white;
+    color: rgb(24, 24, 24);
+    padding: 3%;
+}
+
 .explore_sports {
     background-color: white;
     width: 100%;
@@ -179,6 +308,7 @@ nav .nav_2 button {
 #sports3 {
     grid-area: sport3;
 }
+
 .sports {
     display: flex;
     flex-direction: column;
@@ -188,23 +318,4 @@ nav .nav_2 button {
 
 .sports img {
     width: 90%;
-}
-
-.sports h3 {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    color: rgb(24, 24, 24);
-    font-size: 1.25em;
-    margin: auto 0;
-}
-
-.sports button {
-    font-size: 1em;
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(24, 24, 24);
-    padding: 2%;
-    margin-bottom: auto;
-    width: 50%;
-    word-spacing: 2%;
-    font-weight: 600;
 }
