@@ -89,6 +89,15 @@ nav .nav_2 {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.nav_items:hover {
+    border-bottom: 5px solid rgba(138, 115, 80, 1);
+    padding-bottom: 1%;
+    opacity: 0.75;
+    cursor: pointer;
 }
 
 nav .nav_2 button {
@@ -101,6 +110,18 @@ nav .nav_2 button {
     justify-content: space-around;
     height: 70%;
     padding: 2%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+nav .nav_2 button:hover {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+nav .nav_2 img:hover {
+    width: 45px;
+    cursor: pointer;
 }
 
 .video_section {
@@ -129,6 +150,14 @@ nav .nav_2 button {
     bottom: 10%;
     left: 4%;
     width: 10%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.video_section button:hover {
+    border: 2px solid white;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .cricket_season .puma_rcb_jersey {
@@ -198,6 +227,17 @@ nav .nav_2 button {
     width: 50%;
     word-spacing: 2%;
     font-weight: 600;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.shop_now_button:hover {
+    background-color: rgba(24, 24, 24, 0.9);
+    cursor: pointer;
+}
+
+.shop_now_button:active {
+    background-color: rgba(24, 24, 24, 0.8);
 }
 
 .exclusive_launch {
@@ -363,6 +403,16 @@ footer .footer_part_1 td {
     font-weight: 350;
 }
 
+footer .footer_part_1 td:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer .footer_part_1 th:hover {
+    cursor: pointer;
+    font-weight: 900;
+}
+
 footer .footer_part_1 .social_media {
     display: flex;
     flex-direction: column;
@@ -386,6 +436,13 @@ footer .footer_part_1 .social_media .social_media_icons {
 
 footer .footer_part_1 .social_media .social_media_icons img {
     width: 12%;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+footer .footer_part_1 .social_media .social_media_icons img:hover {
+    cursor: pointer;
+    border: 2px solid white;
 }
 
 footer .footer_part_1 .social_media #app_icons {
@@ -396,6 +453,13 @@ footer .footer_part_1 .social_media #app_icons {
 
 footer .footer_part_1 .social_media #app_icons img {
     width: 15%;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+footer .footer_part_1 .social_media #app_icons img:hover {
+    cursor: pointer;
+    border: 2px solid white;
 }
 
 .line {
@@ -445,6 +509,13 @@ footer .footer_part_1 .social_media #app_icons img {
     border: 1px solid white;
     border-radius: 10px;
     padding: 2.25%;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.flags .country:hover {
+    cursor: pointer;
+    border: 2px solid white;
 }
 
 .copyright {
@@ -455,7 +526,7 @@ footer .footer_part_1 .social_media #app_icons img {
 }
 
 .copyright p {
-    color: rgba(255, 255, 255, 3);
+    color: rgba(255, 255, 255, 0.7);
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 1em;
     letter-spacing: 2%;
