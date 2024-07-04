@@ -174,12 +174,12 @@ nav .nav_2 img:hover {
     border: 2px solid white;
     font-size: 1.1rem;
     cursor: pointer;
+    width: 11%;
 }
 
 .cricket_season {
     background-color: white;
     width: 100%;
-    /* height: 155vh; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 2fr;
@@ -252,20 +252,17 @@ nav .nav_2 img:hover {
 
 .exclusive_launch {
     width: 100%;
-    /* height: 80vh; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3%;
     overflow: hidden;
-}
-
-.exclusive_launch img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    z-index: -1;
+    background-image: url(Media/exclusive_launch.avif);
+    background-repeat: no-repeat;
+    padding: 8% 8% 8% 0;
+    background-position: center;
+    background-size: cover;
 }
 
 .exclusive_launch_description {
@@ -286,8 +283,9 @@ nav .nav_2 img:hover {
 }
 
 .exclusive_launch_description p {
-    font-size: 1.25em;
+    font-size: 1.1em;
     margin: auto 0;
+    padding: 2% 0;
 }
 
 .exclusive_launch_description .buttons {
@@ -314,16 +312,17 @@ nav .nav_2 img:hover {
 .exclusive_launch_description button:hover {
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .explore_sports {
     background-color: white;
     width: 100%;
-    /* height: 125vh; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.75fr 1.25fr;
-    grid-template-areas: "game game game" "sport1 sport2 sport3" ;
+    grid-template-areas: "game game game" "sport1 sport2 sport3";
+    min-height: 400px;
 }
 
 .see_the_game {
@@ -352,18 +351,6 @@ nav .nav_2 img:hover {
     font-weight: 500;
 }
 
-#sports1 {
-    grid-area: sport1;
-}
-
-#sports2 {
-    grid-area: sport2;
-}
-
-#sports3 {
-    grid-area: sport3;
-}
-
 .sports {
     display: flex;
     flex-direction: column;
@@ -375,11 +362,15 @@ nav .nav_2 img:hover {
     width: 90%;
 }
 
+.sports .pseudo_heading {
+    padding: 3%;
+}
+
 footer {
     width: 100vw;
-    /* height: 70vh; */
     background-color: rgb(24, 24, 24);
     margin-top: 2%;
+    padding: 2%;
 }
 
 footer .footer_part_1 {
@@ -519,7 +510,7 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     justify-content: space-around;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 2.25%;
+    padding: 2%;
     transition-duration: 0.1s;
     transition-timing-function: ease;
 }
@@ -543,23 +534,7 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     margin-right: 7%;
 }
 
-@media (max-width: 850px) and (min-width: 749px) {
-    .cricket_season {
-        /* height: 335vh; */
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.15fr 1fr 1fr;
-        grid-template-areas: "heading" "rcb_jersey" "dc_jersey";
-        row-gap: 10px;
-    }
-    .cricket_season .puma_rcb_jersey {
-        grid-area: rcb_jersey;
-    }
-    .cricket_season .puma_dc_jersey {
-        grid-area: dc_jersey;
-    }
-    .cricket_season img {
-        width: 80%;
-    }
+/* @media (max-width: 850px) {
     .exclusive_launch_description h2 {
         font-size: 2.10em;
     }
@@ -568,31 +543,6 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
     .exclusive_launch_description button {
         font-size: 0.70em;
-    }
-    .exclusive_launch {
-        /* height: 50vh; */
-        margin-top: 0;
-    }
-    .explore_sports {
-        grid-template-rows: 0.55fr repeat(3, 1.5fr);
-        grid-template-columns: 1fr;
-        grid-template-areas: "game" "sport1" "sport2" "sport3";
-        /* height: 375vh; */
-    }
-    .explore_sports img {
-        width: 75%;
-    }
-    .see_the_game {
-        grid-area: game;
-    }
-    #sports1 {
-        grid-area: sport1;
-    }
-    #sports2 {
-        grid-area: sport2;
-    }
-    #sports3 {
-        grid-area: sport3;
     }
     .see_the_game_heading {
         font-size: 1.55em;
@@ -606,9 +556,6 @@ footer .footer_part_1 .social_media #app_icons img:hover {
         line-height: 1.45em;
         font-size: 1.05em;
         font-weight: 500;
-    }
-    .footer {
-        /* height: 35vh; */
     }
     footer .footer_part_1 .social_media #app_icons img {
         width: 25%;
@@ -633,26 +580,7 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
 }
 
-@media (max-width: 950px) and (min-width: 849px) {
-    .cricket_season {
-        /* height: 335vh; */
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.15fr 1fr 1fr;
-        grid-template-areas: "heading" "rcb_jersey" "dc_jersey";
-        row-gap: 10px;
-    }
-    .cricket_season .puma_rcb_jersey {
-        grid-area: rcb_jersey;
-    }
-    .cricket_season .puma_dc_jersey {
-        grid-area: dc_jersey;
-    }
-    .cricket_season img {
-        width: 80%;
-    }
-    .footer {
-        /* height: 40vh; */
-    }
+@media (max-width: 950px) {
     .exclusive_launch_description h2 {
         font-size: 2.10em;
     }
@@ -661,28 +589,6 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
     .exclusive_launch_description button {
         font-size: 0.70em;
-    }
-    .exclusive_launch {
-        /* height: 50vh; */
-        margin-top: 0;
-    }
-    .explore_sports {
-        grid-template-rows: 0.55fr 0.85fr 1.5fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "game game" "sport1 sport2" "sport3 sport3";
-        /* height: 270vh; */
-    }
-    .see_the_game {
-        grid-area: game;
-    }
-    #sports1 {
-        grid-area: sport1;
-    }
-    #sports2 {
-        grid-area: sport2;
-    }
-    #sports3 {
-        grid-area: sport3;
     }
     .see_the_game_heading {
         font-size: 1.75em;
@@ -720,9 +626,8 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
 }
 
-@media (max-width: 1050px) and (min-width: 949px) {
+@media (max-width: 1050px) {
     .cricket_season {
-        /* height: 325vh; */
         grid-template-columns: 1fr;
         grid-template-rows: 0.15fr 1fr 1fr;
         grid-template-areas: "heading" "rcb_jersey" "dc_jersey";
@@ -734,9 +639,6 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     .cricket_season .puma_dc_jersey {
         grid-area: dc_jersey;
     }
-    .footer {
-        /* height: 50vh; */
-    }
     .exclusive_launch_description h2 {
         font-size: 2.40em;
     }
@@ -746,15 +648,10 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     .exclusive_launch_description button {
         font-size: 0.80em;
     }
-    .exclusive_launch {
-        /* height: 50vh; */
-        margin-top: 0;
-    }
     .explore_sports {
         grid-template-rows: 0.65fr 0.80fr 1.5fr;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "game game" "sport1 sport2" "sport3 sport3";
-        /* height: 260vh; */
     }
     .see_the_game {
         grid-area: game;
@@ -770,17 +667,7 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
 }
 
-@media (max-width: 1100px) and (min-width: 1049px) {
-    .cricket_season {
-        /* height: 100vh; */
-    }
-    .exclusive_launch {
-        margin-top: 0;
-        /* height: 52vh; */
-    }
-    .footer {
-        /* height: 55vh; */
-    }
+@media (max-width: 1100px) {
     .exclusive_launch_description h2 {
         font-size: 2.40em;
     }
@@ -790,52 +677,10 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     .exclusive_launch_description button {
         font-size: 0.80em;
     }
-    .explore_sports {
-        /* height: 95vh; */
-    }
 }
 
-@media (max-width: 1200px) and (min-width: 1099px) {
-    .cricket_season {
-        /* height: 105vh; */
-    }
-    .cricket_season img {
-        width: 80%;
-    }
-    .exclusive_launch {
-        margin-top: 0;
-        /* height: 54vh; */
-    }
-    .footer {
-        /* height: 55vh; */
-    }
-    .exclusive_launch_description h2 {
-        font-size: 2.60em;
-    }
-    .exclusive_launch_description p {
-        font-size: 1.15em;
-    }
-    .exclusive_launch_description button {
-        font-size: 0.85em;
-    }
-    .explore_sports {
-        /* height: 100vh; */
-    }
-}
-
-@media (max-width: 1300px) and (min-width: 1199px) {
-    .cricket_season {
-        /* height: 115vh; */
-    }
-    .explore_sports {
-        /* height: 110vh; */
-    }
-    .exclusive_launch {
-        /* height: 57vh; */
-    }
-    .footer {
-        /* height: 55vh; */
-    }
+@media (max-width: 1200px) {
+    
     .exclusive_launch_description h2 {
         font-size: 2.60em;
     }
@@ -847,31 +692,7 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
 }
 
-@media (max-width: 1400px) and (min-width: 1299px) {
-    .cricket_season {
-        /* height: 116vh; */
-    }
-    .cricket_season img {
-        width: 85%;
-    }
-    .exclusive_launch_description h2 {
-        font-size: 2.60em;
-    }
-    .exclusive_launch_description p {
-        font-size: 1.15em;
-    }
-    .exclusive_launch_description button {
-        font-size: 0.85em;
-    }
-    .explore_sports {
-        /* height: 112vh; */
-    }
-}
-
-@media (max-width: 1500px) and (min-width: 1399px) {
-    .cricket_season {
-        /* height: 132vh; */
-    }
+@media (max-width: 1300px) {
     .exclusive_launch_description h2 {
         font-size: 2.60em;
     }
@@ -883,70 +704,49 @@ footer .footer_part_1 .social_media #app_icons img:hover {
     }
 }
 
-@media (max-width: 1650px)  and (min-width: 1549px) {
-    .cricket_season {
-        /* height: 135vh; */
+@media (max-width: 1400px) {
+    .exclusive_launch_description h2 {
+        font-size: 2.60em;
     }
-    .cricket_season img {
-        width: 85%;
+    .exclusive_launch_description p {
+        font-size: 1.15em;
     }
-    .explore_sports {
-        /* height: 115vh; */
-    }
-    .footer {
-        /* height: 60vh; */
+    .exclusive_launch_description button {
+        font-size: 0.85em;
     }
 }
 
-@media (max-width: 1750px) and (min-width: 1649px) {
-    .exclusive_launch {
-        margin-top: 0%;
-        /* height: 60vh; */
+@media (max-width: 1500px) {
+    .exclusive_launch_description h2 {
+        font-size: 2.60em;
     }
-    .cricket_season {
-        /* height: 145vh; */
+    .exclusive_launch_description p {
+        font-size: 1.15em;
     }
-}
-
-@media (max-width: 1800px) and (min-width: 1749px) {
-    .exclusive_launch {
-        /* height: 68vh; */
-    }
-    .cricket_season {
-        /* height: 148vh; */
-    }
-    .cricket_season img {
-        width: 85%;
+    .exclusive_launch_description button {
+        font-size: 0.85em;
     }
 }
 
-@media (max-width: 2050px) and (min-width: 1799px) {
-    .cricket_season {
-        /* height: 145vh; */
-    }
-    .explore_sports {
-        /* height: 105vh; */
-    }
-    .footer {
-        /* height: 55vh; */
-    }
+@media (max-width: 1650px) {
+    
 }
 
-@media (max-width: 2300px) and (min-width: 2049px) {
-    .exclusive_launch {
-        margin-top: 0%;
-        /* height: 75vh; */
-    }
-    .cricket_season {
-        /* height: 155vh; */
-    }
-    .footer {
-        /* height: 60vh; */
-    }
-    .explore_sports {
-        /* height: 120vh; */
-    }
+@media (max-width: 1750px) {
+    
 }
+
+@media (max-width: 1800px) {
+    
+}
+
+@media (max-width: 2050px) {
+
+}
+
+@media (max-width: 2300px) {
+    
+} */
 
 /* nav .nav_1 {
     display: none;
